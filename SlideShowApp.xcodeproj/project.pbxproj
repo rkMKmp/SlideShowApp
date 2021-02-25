@@ -13,6 +13,10 @@
 		3C99D35B25E74ACE00B3AB1C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C99D35925E74ACE00B3AB1C /* Main.storyboard */; };
 		3C99D35D25E74AD500B3AB1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C99D35C25E74AD500B3AB1C /* Assets.xcassets */; };
 		3C99D36025E74AD500B3AB1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C99D35E25E74AD500B3AB1C /* LaunchScreen.storyboard */; };
+		3C99D36925E74C4E00B3AB1C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C99D36825E74C4E00B3AB1C /* SecondViewController.swift */; };
+		3C99D36C25E7869000B3AB1C /* りす.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3C99D36B25E7868F00B3AB1C /* りす.jpeg */; };
+		3C99D36F25E786AB00B3AB1C /* うさぎ.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3C99D36E25E786AB00B3AB1C /* うさぎ.jpeg */; };
+		3C99D37225E786C700B3AB1C /* 犬.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3C99D37125E786C700B3AB1C /* 犬.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		3C99D35C25E74AD500B3AB1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C99D35F25E74AD500B3AB1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C99D36125E74AD500B3AB1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C99D36825E74C4E00B3AB1C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3C99D36B25E7868F00B3AB1C /* りす.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "りす.jpeg"; sourceTree = "<group>"; };
+		3C99D36E25E786AB00B3AB1C /* うさぎ.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "うさぎ.jpeg"; sourceTree = "<group>"; };
+		3C99D37125E786C700B3AB1C /* 犬.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "犬.jpeg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +68,13 @@
 				3C99D35525E74ACE00B3AB1C /* SceneDelegate.swift */,
 				3C99D35725E74ACE00B3AB1C /* ViewController.swift */,
 				3C99D35925E74ACE00B3AB1C /* Main.storyboard */,
+				3C99D36B25E7868F00B3AB1C /* りす.jpeg */,
+				3C99D36E25E786AB00B3AB1C /* うさぎ.jpeg */,
+				3C99D37125E786C700B3AB1C /* 犬.jpeg */,
 				3C99D35C25E74AD500B3AB1C /* Assets.xcassets */,
 				3C99D35E25E74AD500B3AB1C /* LaunchScreen.storyboard */,
 				3C99D36125E74AD500B3AB1C /* Info.plist */,
+				3C99D36825E74C4E00B3AB1C /* SecondViewController.swift */,
 			);
 			path = SlideShowApp;
 			sourceTree = "<group>";
@@ -124,8 +136,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C99D37225E786C700B3AB1C /* 犬.jpeg in Resources */,
 				3C99D36025E74AD500B3AB1C /* LaunchScreen.storyboard in Resources */,
+				3C99D36F25E786AB00B3AB1C /* うさぎ.jpeg in Resources */,
 				3C99D35D25E74AD500B3AB1C /* Assets.xcassets in Resources */,
+				3C99D36C25E7869000B3AB1C /* りす.jpeg in Resources */,
 				3C99D35B25E74ACE00B3AB1C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C99D36925E74C4E00B3AB1C /* SecondViewController.swift in Sources */,
 				3C99D35825E74ACE00B3AB1C /* ViewController.swift in Sources */,
 				3C99D35425E74ACE00B3AB1C /* AppDelegate.swift in Sources */,
 				3C99D35625E74ACE00B3AB1C /* SceneDelegate.swift in Sources */,
