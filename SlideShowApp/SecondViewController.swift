@@ -1,29 +1,18 @@
-//
-//  SecondViewController.swift
-//  SlideShowApp
-//
-//  Created by riki on 2021/02/25.
-//
 
 import UIKit
 
 class SecondViewController: UIViewController {
+//uiimageviewをアウトレット接続する
 
+    @IBOutlet weak var imageview: UIImageView!
+    //viewcontrollerから送られてくるimageを入れるための変数を定義する
+    var image = UIImage()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        imageview.image = image
+//uiイメージビューに送られてきたイメージを入れて表示させる
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

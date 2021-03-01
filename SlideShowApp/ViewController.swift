@@ -27,35 +27,65 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let animalImage: UIImage = UIImage(named: "うさぎ")!
         //画面に画像を設定
-        imageview.image = animalImage
+        imageview.image = imagelist[nowindex]
     }
     @objc func updateTimer(_timer:Timer){
         self.nowindex += 1
-        
-        if self.nowindex == 2{
+        //imagelist.countはイント型の３を意味する
+        if self.nowindex == imagelist.count {
             self.nowindex = 0
         }
+        imageview.image = imagelist[nowindex]
         }
     override func prepare(for segue:UIStoryboardSegue,sender:Any?){
-        let
-        if self.timer! = nil{
+        let secondviewcontroller: SecondViewController = segue.destination as!
+           SecondViewController
+        secondviewcontroller.image = imageview.image!
+        if self.timer != nil{
             self.timer.invalidate()
         check = true
      }
      }
     //進ボタンを押した時の処理
-    @IBAction func backimage(_sender:Any){
-        if() {
-            
+    @IBAction func nextbutton(_sender:Any){
+        self.nowindex += 1
+        //imagelist.countはイント型の３を意味する
+        if self.nowindex == imagelist.count {
+            self.nowindex = 0
         }
-     }
+        imageview.image = imagelist[nowindex]
+        }
     //戻るボタンを押した時の処理
-    @IBAction func backimage(_sender:Any){
-        if(){
-            
+    @IBAction func backbutton(_sender:Any){
+        self.nowindex -= 1
+        if nowindex == -1{
+            nowindex = 2
+        }
+        imageview.image = imagelist[nowindex]
+    }
+    @IBAction func slidebutton(_ sender: Any) {
+     if self.timer == nil{
+        self.timer = Timer.scheduledTimer(timeInterval: 2, target: self,selector: #selector(updateTimer(_timer:)),userInfo: nil, repeats: true)
+        self.slidebutton.setTitle("停止",for: .normal)
+            self.nextbutton.isEnabled = false
+            self.backbutton.isEnabled = false
+        }
+            else {
+                self.timer.invalidate()
+                self.timer = nil
+                self.slidebutton.setTitle("再生", for: .normal)
+                self.nextbutton.isEnabled = true
+                self.backbutton.isEnabled = true
         }
     }
-    
+    @IBAction func unwind(_ segue: UIStoryboardSegue){
+        if check == true{
+            self.timer = Timer.scheduledTimer(timeInterval: 2, target: self,selector: #selector(updateTimer(_timer:)),userInfo: nil, repeats: true)
+            self.slidebutton.setTitle("停止",for: .normal)
+            self.nextbutton.isEnabled = false
+            self.backbutton.isEnabled = false
+        }
+        }
  }
 
 
